@@ -1,10 +1,10 @@
-- @posts.each do |post|
-	%h1= link_to post.title, post
-	%p 
-		posted
-		= time_ago_in_words(post.created_at)
-		ago
-		by
-		= post.user.email
-
-= link_to "New Post", new_post_path
+#posts
+	- @posts.each do |post|
+		.post
+			%h1.title= link_to post.title, post
+			%p.date 
+				posted
+				= time_ago_in_words(post.created_at)
+				ago
+				by
+				= post.user.email
