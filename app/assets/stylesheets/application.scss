@@ -103,3 +103,17 @@ body {
 	}
 }
 
+#comments {
+	.content {
+		width: 70%;
+		float: left;
+	}
+	.buttons {
+		width: 30%;
+		float: left;
+	}
+}
+
+.submit-btn {
+	float: right;
+}
